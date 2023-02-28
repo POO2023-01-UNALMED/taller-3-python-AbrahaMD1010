@@ -27,7 +27,7 @@ class TV():
     def getPrecio(self):
         return self._precio
     
-    def setMarca(self,marca:Marca):
+    def setMarca(self,marca):
         self._marca=marca
     def getMarca(self):
         return self._marca

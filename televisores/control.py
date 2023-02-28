@@ -17,12 +17,12 @@ class Control():
         self.tv.turnOff()
     
     def canalUp(self):
-        self.tv.canalUp
+        self.tv.canalUp()
     def canalDown(self):
         self.tv.canalDown()
 
     def volumenUp(self):
-        self.tv.volumenUp
+        self.tv.volumenUp()
     def volumenDown(self):
         self.tv.volumenDown()
     

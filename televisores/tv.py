@@ -5,11 +5,15 @@ class TV():
     _control=None
     numTV=0
 
+    @classmethod
+    def sumarTv(cls):
+        cls.numTV+=1
+
     def __init__(self,marca,estado:bool) -> None:
         self._marca=marca
         self._estado=estado
-        TV.numTv+=1
-    
+        self.sumarTv()
+        
     def setCanal(self,canal):
         if (canal>=1 and canal<=120):
             self._canal=canal

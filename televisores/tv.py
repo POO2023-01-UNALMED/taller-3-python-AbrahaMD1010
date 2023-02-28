@@ -1,7 +1,5 @@
 class TV():
-    _canal=1
-    _volumen=1
-    _precio=500
+    
     _control=None
     numTV=0
 
@@ -13,7 +11,11 @@ class TV():
         self._marca=marca
         self._estado=estado
         self.sumarTv()
-        
+
+        self._canal=1
+        self._volumen=1
+        self._precio=500
+
     def setCanal(self,canal):
         if (canal>=1 and canal<=120):
             self._canal=canal

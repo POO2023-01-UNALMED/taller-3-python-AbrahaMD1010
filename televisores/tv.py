@@ -8,7 +8,7 @@ class TV():
     def __init__(self,marca,estado:bool) -> None:
         self._marca=marca
         self._estado=estado
-        numTv+=1
+        self.numTv+=1
     
     def setCanal(self,canal):
         if (canal>=1 and canal<=120):

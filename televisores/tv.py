@@ -1,6 +1,6 @@
 class TV():
     
-    _control=None
+    
     numTV=0
 
     @classmethod
@@ -15,6 +15,7 @@ class TV():
         self._canal=1
         self._volumen=1
         self._precio=500
+        self._control=None
 
     def setCanal(self,canal):
         if (canal>=1 and canal<=120):

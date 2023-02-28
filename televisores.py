@@ -41,7 +41,7 @@ class TV():
     def getMarca(self):
         return self._marca
     
-    def setControl(self,control:Control):
+    def setControl(self,control):
         self._control=control
     def getControl(self):
         return self._control
@@ -104,7 +104,7 @@ class Control():
     
     def setCanal(self):
         self.tv.setCanal
-        
+
         
 
 

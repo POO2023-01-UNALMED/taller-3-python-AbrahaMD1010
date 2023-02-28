@@ -5,7 +5,7 @@ class TV():
     _control=None
     numTV=0
 
-    def __init__(self,marca:Marca,estado:bool) -> None:
+    def __init__(self,marca,estado:bool) -> None:
         self._marca=marca
         self._estado=estado
         numTv+=1

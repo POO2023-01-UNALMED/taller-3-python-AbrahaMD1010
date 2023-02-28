@@ -1,12 +1,3 @@
-class Marca():
-    def __init__(self,nombre:str) -> None:
-        self._nombre=nombre
-
-    def getNombre(self):
-        return self._nombre  
-    def setNombre(self,nombre):
-        self._nombre=nombre
-
 class TV():
     _canal=1
     _volumen=1
@@ -79,34 +70,3 @@ class TV():
         if(self._estado==True):
             if(self._volumen>1 and self._volumen<=7):
                 self._volumen-=1
-
-class Control():
-    tv=None
-
-    def enlazar(self,tv:TV):
-        tv.setControl(self)
-        self.tv=tv
-
-    def turnOn(self):
-        self.tv.turnOn
-    def turnOff(self):
-        self.tv.turnOff
-    
-    def canalUp(self):
-        self.tv.canalUp
-    def canalDown(self):
-        self.tv.canalDown
-
-    def volumenUp(self):
-        self.tv.volumenUp
-    def volumenDown(self):
-        self.tv.volumenDown
-    
-    def setCanal(self):
-        self.tv.setCanal
-
-        
-
-
-    
-        
